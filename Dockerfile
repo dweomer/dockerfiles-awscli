@@ -10,4 +10,4 @@ RUN set -x \
  && pip install --upgrade pip \
  && pip install awscli
 
-ENTRYPOINT ["bash"]
+ENTRYPOINT ["aws"]
