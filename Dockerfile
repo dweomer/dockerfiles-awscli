@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.5
 
 RUN set -x \
  && apk add --update --no-cache \
@@ -6,7 +6,7 @@ RUN set -x \
     groff \
     jq \
     less \
-    py-pip \
+    py2-pip \
  && pip install --upgrade pip \
  && pip install awscli
 
